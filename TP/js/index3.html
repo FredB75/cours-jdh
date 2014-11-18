@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script language="javascript" type="text/javascript">
+//            function euros(francs)
+//            {
+//                resultat = francs / 6.55957;
+//                return(resultat);
+//            }
+//            document.write(euros(10));
+//            document.write("<br />"+ resultat);
+//            document.write("<br />"+ euros(20));
+            resultat = "";
+            function ttc(ht, taux)
+            {
+                resultat = ht * (1 + taux / 100);
+                        return (resultat);
+            }
+            ht = 150;
+            taux = 20;
+            ttc = ttc(ht, taux);
+            document.write(ht+" € HT donnent "+ttc+" € TTC avec un taux de TVA de "+taux+"%.");
+            //console log (resultat);
+        </script>
+    </head>
+    <body>
+<!--        <script language="javascript" type="text/javascript">
+            document.write(ttc);
+           
+        </script>-->
+
+
+    </body>
+</html>

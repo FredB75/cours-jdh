@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script language="javascript" type="text/javascript">
+            tab_pays = new Array(
+                    new Array("Allemagne", 11),
+                    new Array("Belgique", 12),
+                    new Array("Espagne", 14),
+                    new Array("France", 10)
+                    );
+            tabHTML = "";
+            affListe = "";
+            for (i = 0; i < tab_pays.length; i++)
+            {
+                tabHTML += "<tr bgcolor=red>" +
+                        "<td>" + tab_pays[i][0] + "</td>" +
+                        "<td>" + tab_pays[i][1] + "</td>" +
+                        "</tr>";
+                affListe += "<option value=>" + tab_pays[i][0] + "</option>";
+//                affListe += "<option value=\"" + tab_pays[i][1] + "\">" + tab_pays[i][0] + "</option>";
+            }
+
+        </script>
+    </head>
+    <body>
+        <table border="1">
+            <thead>
+                <tr>
+                    <td>Pays</td>
+                    <td>Frais</td>
+                </tr>
+            </thead>
+            <tbody>
+            <script language="javascript" type="text/javascript">
+                document.write(tabHTML);
+
+            </script>
+            <tbody>
+        </table>
+        </br>
+        <form>
+            <select name="pays">
+                <option value="">Choisir pays</option>
+                <script language="javascript" type="text/javascript">
+                    document.write(affListe);
+
+                </script>
+            </select>
+        </form>
+
+    </body>
+</html>
