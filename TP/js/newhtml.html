@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>formulaire</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/JavaScript">
+           function main(){
+                //doc
+                console.log("dom loaded");
+                console.log($("div").length);
+                console.log($("input").length);
+                var object = $.extend({}, ("larue"), ("toto"));
+                console.log(object);
+                
+            };
+            $(main);
+            
+            
+        </script>
+
+    </head>
+    <body>
+        <div id="clickme">
+            Click here
+        </div>
+        <img id="book" src="head.jpg" alt="" width="200" height="200">
+        <script type="text/JavaScript">
+           
+            $( "#clickme" ).click(function() {
+  $( "#book" ).animate({
+    opacity: 0.25,
+    left: "+=50",
+    height: "toggle"
+  }, 5000, function() {
+    // Animation complete.
+  });
+});
+        </script>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+
+
+    </body>
+</html>
